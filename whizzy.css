@@ -1,0 +1,64 @@
+/* Whizzy - custom styles (Tailwind utility classes still load from the CDN in index.html) */
+
+/* ----- Glass, glow, scrollbar, flashcard flip ----- */
+.glass-dark {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+.orange-glow {
+    box-shadow: 0 0 25px -5px rgba(249, 115, 22, 0.35);
+}
+.orange-glow-sm {
+    box-shadow: 0 0 12px -2px rgba(249, 115, 22, 0.25);
+}
+.perspective-1000 {
+    perspective: 1000px;
+}
+.transform-style-3d {
+    transform-style: preserve-3d;
+}
+.backface-hidden {
+    backface-visibility: hidden;
+}
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(249, 115, 22, 0.3);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(249, 115, 22, 0.6);
+}
+    
+
+/* ----- Built-in icons (replace Font Awesome) ----- */
+.fa-solid,.fa-regular{display:inline-block;width:1em;height:1em;vertical-align:-0.125em;background-color:currentColor;-webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat}
+.fa-moon{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M21%2012.8A9%209%200%201%201%2011.2%203a7%207%200%200%200%209.8%209.8z'/%3E%3C/svg%3E")}
+.fa-sun{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Ccircle%20cx='12'%20cy='12'%20r='4'/%3E%3Cpath%20d='M12%202v2M12%2020v2M4.9%204.9l1.4%201.4M17.7%2017.7l1.4%201.4M2%2012h2M20%2012h2M4.9%2019.1l1.4-1.4M17.7%206.3l1.4-1.4'/%3E%3C/svg%3E")}
+.fa-xmark{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M18%206%206%2018M6%206l12%2012'/%3E%3C/svg%3E")}
+.fa-arrow-left{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M19%2012H5M12%2019l-7-7%207-7'/%3E%3C/svg%3E")}
+.fa-arrow-right{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M5%2012h14M12%205l7%207-7%207'/%3E%3C/svg%3E")}
+.fa-check{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M20%206%209%2017l-5-5'/%3E%3C/svg%3E")}
+.fa-check-double{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M18%206%207%2017l-5-5M22%2010l-7.5%207.5L13%2016'/%3E%3C/svg%3E")}
+.fa-circle-check{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Ccircle%20cx='12'%20cy='12'%20r='10'/%3E%3Cpath%20d='m9%2012%202%202%204-4'/%3E%3C/svg%3E")}
+.fa-circle-xmark{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Ccircle%20cx='12'%20cy='12'%20r='10'/%3E%3Cpath%20d='m15%209-6%206M9%209l6%206'/%3E%3C/svg%3E")}
+.fa-clock{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Ccircle%20cx='12'%20cy='12'%20r='10'/%3E%3Cpath%20d='M12%206v6l4%202'/%3E%3C/svg%3E")}
+.fa-clock-rotate-left{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3%2012a9%209%200%201%200%203-6.7L3%208M3%203v5h5M12%207v5l4%202'/%3E%3C/svg%3E")}
+.fa-book{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M4%2019.5A2.5%202.5%200%200%201%206.5%2017H20V2H6.5A2.5%202.5%200%200%200%204%204.5zM6.5%2017H20v5H6.5a2.5%202.5%200%200%201%200-5z'/%3E%3C/svg%3E")}
+.fa-book-open{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M2%203h6a4%204%200%200%201%204%204v14a3%203%200%200%200-3-3H2zM22%203h-6a4%204%200%200%200-4%204v14a3%203%200%200%201%203-3h7z'/%3E%3C/svg%3E")}
+.fa-clone{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Crect%20x='8'%20y='8'%20width='14'%20height='14'%20rx='2'/%3E%3Cpath%20d='M4%2016a2%202%200%200%201-2-2V4a2%202%200%200%201%202-2h10a2%202%200%200%201%202%202'/%3E%3C/svg%3E")}
+.fa-folder-open{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='m6%2014%201.5-2.9A2%202%200%200%201%209.2%2010H22a1%201%200%200%201%201%201.5l-2.4%206A2%202%200%200%201%2018.7%2019H4a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2h3.9a2%202%200%200%201%201.7.9l.8%201.2a2%202%200%200%200%201.7.9H18a2%202%200%200%201%202%202v2'/%3E%3C/svg%3E")}
+.fa-paper-plane{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='m22%202-7%2020-4-9-9-4zM22%202%2011%2013'/%3E%3C/svg%3E")}
+.fa-sliders{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M4%2021v-7M4%2010V3M12%2021v-9M12%208V3M20%2021v-5M20%2012V3M1%2014h6M9%208h6M17%2016h6'/%3E%3C/svg%3E")}
+.fa-trophy{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M6%209H4.5a2.5%202.5%200%200%201%200-5H6M18%209h1.5a2.5%202.5%200%200%200%200-5H18M4%2022h16M10%2014.7V17c0%20.6-.5%201-1.2%201.2C7.8%2018.7%207%2020.2%207%2022M14%2014.7V17c0%20.6.5%201%201.2%201.2%201%20.5%201.8%202%201.8%203.8M18%202H6v7a6%206%200%200%200%2012%200z'/%3E%3C/svg%3E")}
+.fa-triangle-exclamation{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='m21.7%2018-8-14a2%202%200%200%200-3.4%200l-8%2014A2%202%200%200%200%204%2021h16a2%202%200%200%200%201.7-3zM12%209v4M12%2017h.01'/%3E%3C/svg%3E")}
+.fa-user{--i:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2.2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M19%2021v-2a4%204%200%200%200-4-4H9a4%204%200%200%200-4%204v2'/%3E%3Ccircle%20cx='12'%20cy='7'%20r='4'/%3E%3C/svg%3E")}
